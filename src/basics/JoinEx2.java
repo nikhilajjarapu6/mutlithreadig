@@ -12,6 +12,7 @@ public class JoinEx2 {
 		JoinEx2 join = new JoinEx2();
 		
 		
+		//first thread
 		Thread add = new Thread(()->{
 			System.out.println("addition started thread");
 			try {
@@ -23,6 +24,7 @@ public class JoinEx2 {
 			join.addition(a,b);
 		});
 		
+		//second thread
 		Thread sub = new Thread(()->{
 			System.out.println("substract thread started");
 			try {
