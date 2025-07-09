@@ -1,0 +1,13 @@
+package basics;
+
+public class LifeCycleOfThread {
+	public static void main(String[] args) {
+		Thread t = new Thread(() -> {
+            try {
+                System.out.println("Running...");
+                Thread.sleep(1000); // TIMED_WAITING
+                System.out.println("Woke up...");
+            } catch (InterruptedException e) {}
+        });
+	}
+}
