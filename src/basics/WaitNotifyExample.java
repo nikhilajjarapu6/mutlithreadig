@@ -4,6 +4,7 @@ public class WaitNotifyExample {
 //	public static Marks marks=new Marks(200);
 	public static Student student=new Student(1, "rock", 23,false,null);
 	
+	//on same object wait and notify example
 	public static void main(String[] args) {
 		
 		//thread 1 is setting marks but it should wait for another complete marks
