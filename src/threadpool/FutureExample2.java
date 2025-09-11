@@ -24,11 +24,6 @@ public class FutureExample2 {
             // Step 2: Runnable to insert student (after registration)
             Runnable insertTask = () -> {
                 System.out.println("inserting student details ......");
-//                try {
-//                    Thread.sleep(2000); // Simulate DB insert delay
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
                 System.out.println("student " + student.getName() + " inserted successfully");
             };
 
